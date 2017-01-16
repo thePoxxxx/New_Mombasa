@@ -16,7 +16,7 @@
         <!-- // OBJ -->
         <a-asset-item id="" src="/*.obj"></a-asset-item>
         <!-- // DAE -->
-        <a-asset-item id="X" src="/3D/test.DAE"></a-asset-item>
+        <a-asset-item id="" src="/*.dae"></a-asset-item>
 
         <!--T E X T U R E   I M P O R T  -->
         <!-- // JPG-->
@@ -29,11 +29,17 @@
       <!-- // OBJ -->
       <a-obj-model src="#" mtl="#" position="0 0 0"></a-obj-model>
       <!-- // DAE -->
-      <a-collada-model src="#X"></a-collada-model>
+      <a-collada-model src="#"></a-collada-model>
 
       <!--  C O D E   G E O M E T R Y  -->
       <!-- // SPHERE -->
-      <a-sphere position="2 2 2" material="src:#">
+      <a-sphere position="0 0 0" material="src:#">
+          <a-animation
+                to='0 360 0'
+                easing='linear'
+                dur='20000'
+                repeat='indefinite'>
+          </a-animation>
       </a-sphere>
     </a-scene>
   </body>
